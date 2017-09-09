@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			let json={
+//				a:'jspang',
+//				b:'技术胖'
+//			}
+//			
+//			function qwe ({a,b="1"}) {
+//				console.log(a,b);
+//			}
+//			
+//			qwe(json)
+
+//			let arr=["1",2,"3",4];
+//			function qwe (a,b,c) {
+//				console.log(a,b,c);
+//			}
+//			qwe(...arr)
+
+//			let o={
+//				a:"jspang",
+//				b:"23"
+//			}
+//			
+//			console.log("a" in o);
+//			console.log(a in o);//a is not undefined
+//			console.log("c" in o);
+			
+//			let arr=[,,,,];
+//			console.log(arr.length);
+//			console.log(0 in arr);
+//			let arr1=[1,2,3,4,5];
+//			console.log(3 in arr1);
+
+//			let arr=[1,2,,,3,4];
+//			arr.forEach((item,index,arr)=>{
+//				console.log(item,index);
+//			})
+//			arr.some((item,index,arr)=>{
+//				console.log(item,index);
+//			})
+//			let arr=[1,2,3,,4];
+//			console.log(arr.join("|"));
+//			console.log(arr.toString());
+
+//			let name="jsapn";
+//			let qwe="15";
+//			let key="asd";
+//			let o={
+//				name,
+//				qwe,
+//				[key]:"789",
+//				zxc:(z,y)=>{
+//					return z+y;
+//				}
+//			}
+//			console.log(o)
+//			console.log(o.asd)
+//			console.log(o.zxc(1,3))
+
+//			let o1={
+//				name:"123"
+//			}
+//			let o2={
+//				name:"123"
+//			}
+//			console.log(o1.name===o2.name);//true
+//			console.log(Object.is(o1.name,o2.name));//true
+//			console.log(+0===-0);//true
+//			console.log(NaN===NaN);//false
+//			console.log(Object.is(+0,-0));//flase
+//			console.log(Object.is(NaN,NaN));//true
+
+//			let a={
+//				a:"jspang"
+//			}
+//			
+//			let b={
+//				b:12
+//			}
+//			
+//			let c={
+//				d:true
+//			}
+//			
+//			let d=Object.assign(a,b,c);
+//			console.log(d)
+//			let e={
+//				a:a.a
+//			}
+//			console.log(e)
+
+//			let g=Symbol("123");
+//			console.log(g);
+//			console.log(g.toString())
+
+//			let qwe=Symbol();
+//			let asd={
+//				[qwe]:"132",
+//				zxc:"456"
+//			}
+//			console.log(asd[qwe]);
+//			asd[qwe]="789";
+//			console.log(asd[qwe]);
+//			for (let item in asd) {
+//				console.log(asd[item]);
+//			}
+
+//			let setArr=new Set(["1","23","78","13"]);
+//			console.log(setArr);
+//			setArr.add("");
+//			console.log(setArr);
+//			setArr.delete("1");
+//			console.log(setArr);
+//			console.log(setArr.has("231"));
+//			setArr.clear();
+//			console.log(setArr)
+
+//			for (let item of setArr) {
+//				console.log(item)
+//			}
+//			
+//			setArr.forEach((value)=>{
+//				console.log(value)
+//			})
+
+//			let json={
+//				name:"123",
+//				asd:12
+//			}
+//			console.log(json.name);
+//			let map=new Map();
+//			map.set("o",json);
+//			map.set("o2","456");
+//			console.log(map)
+//			console.log(map.get("o2"))
+//			console.log(map.size);
+//			console.log(map.delete("o2"));
+//			console.log(map.has("o2"));
+//			console.log(map.clear());
+//			console.log(map)
+
+//			let obj={
+//				add:function (val) {
+//					return val+10;
+//				},
+//				name:"123465"
+//			}
+//			console.log(obj.add(10));
+//			console.log(obj.name);
+			
+//			var pro=new Proxy({
+//				add:function (val) {
+//					return val+10;
+//				},
+//				name:"123465"
+//			},{
+//				get:function (target,key,property) {
+//					console.log(target,key,property);
+//					return target[key];
+//				},
+//				set:function (target,key,value,receiver) {
+//					console.log(target,key,value,receiver);
+//					return target[key]=value;
+//				}
+//			});
+//			
+//			console.log(pro.name);
+//			pro.name="456";
+//			console.log(pro.name);
+			
+//			let a=1;
+//			function qwe (resolve,reject) {
+//				console.log("1111");
+//				if(a==1){
+//					resolve("qqqq");
+//				}else{
+//					reject("1a3s21d");
+//				}
+//			}
+//			function asd (resolve,reject) {
+//				console.log("222");
+//				if(a==1){
+//					resolve("sss");
+//				}else{
+//					reject("1a3s21d");
+//				}
+//			}
+//			function zxc (resolve,reject) {
+//				console.log("333");
+//				if(a==1){
+//					resolve("ddd");
+//				}else{
+//					reject("1a3s21d");
+//				}
+//			}
+//			
+//			new Promise(qwe).then(function (val) {
+//				console.log(val);
+//				return new Promise(asd);
+//			}).then(function (val) {
+//				console.log(val)
+//				return new Promise(zxc);
+//			}).then(function (val) {
+//				console.log("123456798")
+//			});
+
+			class qwe{
+				name(val){
+					console.log(val);
+				}
+				asd(){
+					console.log("1465")
+				}
+				constructor(a,b){
+					this.a=a;
+					this.b=b;
+				}
+				add(){
+					return this.a+this.b;
+				}
+			}
+			
+			let q=new qwe(1,5);
+			q.name(123);
+			q.asd();
+			console.log(q.add());
+			
+			class asd extends qwe{
+				
+			}
+			
+			let a=new asd(1,8);
+			console.log(a.add())
+		</script>
+	</body>
+</html>
